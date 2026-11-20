@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "model_variant": "noerase_crt_balanced",
+  "status": "not_fitted",
+  "method": "Identity temperature 1.0; report raw model probabilities.",
+  "limitations": [
+    "Previous model calibration is not applicable and is not reused.",
+    "Confidence and margin thresholds are provisional for this checkpoint.",
+    "High model scores do not verify lettuce identity or exclude unknown diseases."
+  ],
+  "modes": {
+    "single_seed_42": {
+      "temperature": 1.0,
+      "class_names": [
+        "Anthracnose",
+        "Bacterial",
+        "Bottom_Rot",
+        "Downy_Mildew",
+        "Healthy",
+        "Lettuce_Mosaic_Virus",
+        "Powdery_Mildew",
+        "Septoria_Blight",
+        "Viral",
+        "Wilt_and_Leaf_Blight"
+      ],
+      "fit_n": 0,
+      "checkpoint_sha256": {
+        "42": "0c9a1ec932d57a10ead1ddd02072cb39a1716d91ac332d5594a799dfacc9033e"
+      }
+    }
+  }
+}

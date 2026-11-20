@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "online_enabled": true,
+  "map_directory": "data/soilmaps",
+  "cache_directory": "runtime/soil_map_cache",
+  "dataset_version": "SoilGrids2.0",
+  "depth_cm": [
+    5,
+    15
+  ],
+  "statistic": "mean",
+  "timeout_seconds": 4.0,
+  "failure_cache_seconds": 1800,
+  "capabilities_cache_days": 30,
+  "point_half_width_degrees": 0.005
+}

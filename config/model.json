@@ -1,0 +1,77 @@
+{
+  "schema_version": 3,
+  "backend": "efficientnet_b0",
+  "display_name": "EfficientNet-B0 \u00b7 balanced cRT",
+  "model_id": "efficientnet_b0_noerase_crt_balanced_seed42",
+  "variant": "noerase_crt_balanced",
+  "class_names": [
+    "Anthracnose",
+    "Bacterial",
+    "Bottom_Rot",
+    "Downy_Mildew",
+    "Healthy",
+    "Lettuce_Mosaic_Virus",
+    "Powdery_Mildew",
+    "Septoria_Blight",
+    "Viral",
+    "Wilt_and_Leaf_Blight"
+  ],
+  "imgsz": 224,
+  "single_seed": 42,
+  "weights": [
+    {
+      "seed": 42,
+      "path": "models/noerase_crt_balanced/seed_42/best_weights.pt",
+      "sha256": "0c9a1ec932d57a10ead1ddd02072cb39a1716d91ac332d5594a799dfacc9033e",
+      "run_fingerprint": "1ea62839a18989435b9bfd416f53c4824a2329524c0aa967cec47c35d9e0c308"
+    }
+  ],
+  "deployment_status": "single_checkpoint_installed",
+  "checkpoint_format": "lettuce_b0_master_weights_v1",
+  "preprocessing": {
+    "decode": "PIL_RGB_no_exif_transpose",
+    "resize_short_side": 224,
+    "center_crop": 224,
+    "interpolation": "bilinear",
+    "antialias": true,
+    "tensor_range": [
+      0,
+      1
+    ],
+    "normalization_location": "inside_model",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "calibration_path": "config/calibration.json",
+  "decision_policy": {
+    "confidence_threshold": 0.8,
+    "margin_threshold": 0.15,
+    "status": "provisional_not_tuned_for_final_classifier"
+  },
+  "dataset_fingerprint": "eff46ba60a6063a258dd431efde513fc4977e028267a4e69a80dd6c1bc7d2e75",
+  "available_modes": [
+    "single"
+  ],
+  "preprocessing_verification": {
+    "status": "partial_training_transform_unconfirmed",
+    "confirmed": [
+      "image_size224",
+      "embedded_ImageNet_normalization"
+    ],
+    "assumed_from_previous_app": [
+      "PIL_RGB_no_exif_transpose",
+      "short_side224",
+      "center_crop224",
+      "bilinear",
+      "antialias"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{margin:0;font:14px system-ui,sans-serif;color:#23412e}button{border:1px solid #3f7350;background:#f2f8f1;color:#23412e;border-radius:7px;padding:10px 16px;font-weight:600;cursor:pointer}button:disabled{opacity:.6}p{margin:8px 0 0;font-size:12px}</style></head>
+<body><button id="locate" type="button">Use my device location</button><p id="status" aria-live="polite">Your browser will ask for permission.</p>
+<script>
+const btn=document.getElementById('locate'),statusEl=document.getElementById('status');
+function send(type, data={}){window.parent.postMessage({isStreamlitMessage:true,type,...data},'*');}
+function ready(){send('streamlit:componentReady',{apiVersion:1});send('streamlit:setFrameHeight',{height:92});}
+window.addEventListener('message', e=>{if(e.source===window.parent && e.data?.type==='streamlit:render'){btn.disabled=!!e.data.disabled;}});
+btn.addEventListener('click',()=>{
+ if(!navigator.geolocation){statusEl.textContent='Location is unavailable. Enter the farm coordinates instead.';return;}
+ if(!window.isSecureContext){statusEl.textContent='Use localhost or HTTPS for location permission, or enter coordinates.';return;}
+ btn.disabled=true;statusEl.textContent='Finding your location…';
+ navigator.geolocation.getCurrentPosition(pos=>{
+  btn.disabled=false;statusEl.textContent='Location found. Confirm below that it is your farm.';
+  send('streamlit:setComponentValue',{dataType:'json',value:{status:'ok',latitude:pos.coords.latitude,longitude:pos.coords.longitude,accuracy_m:pos.coords.accuracy,timestamp:pos.timestamp}});
+ },err=>{
+  btn.disabled=false;const messages={1:'Permission was declined. You can enter the farm location manually.',2:'Location could not be found. Try manual coordinates.',3:'Location request timed out. Try again or enter coordinates.'};
+  statusEl.textContent=messages[err.code]||'Location unavailable. Use manual coordinates.';
+  send('streamlit:setComponentValue',{dataType:'json',value:{status:'error',code:err.code,timestamp:Date.now()}});
+ },{enableHighAccuracy:true,timeout:12000,maximumAge:0});
+});ready();
+</script></body></html>

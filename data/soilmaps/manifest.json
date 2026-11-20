@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "built_at": "2026-09-12T05:30:41.784047+00:00",
+  "subset": "Pakistan operating rectangle",
+  "bounds": [
+    60.5,
+    23.5,
+    77.5,
+    37.5
+  ],
+  "maps": [
+    {
+      "property": "ph",
+      "path": "soilgrids_ph_pakistan.npz",
+      "format": "npz",
+      "dataset_version": "SoilGrids2.0",
+      "product_variant": "1000 m aggregate",
+      "depth_cm": [
+        5,
+        15
+      ],
+      "statistic": "mean",
+      "resolution_m": 1000,
+      "source_resolution_m": 1000,
+      "raw_divisor": 10,
+      "source": "ISRIC SoilGrids background soil map",
+      "source_url": "https://files.isric.org/soilgrids/latest/data_aggregated/1000m/phh2o/phh2o_5-15cm_mean_1000.tif",
+      "retrieved_at": "2026-09-12T05:18:24.919996+00:00",
+      "sha256": "35fc970387740dea462141b9d3254494c942e826930fb036e6111e357b060bf1",
+      "source_sha256": "dde2006490fad24deb8f4c5727d78066bea6042615dd5943503aa31012115896",
+      "source_code_version": "v2.0.0",
+      "license": "CC BY 4.0",
+      "citation": "Poggio et al. (2021), SoilGrids 2.0, SOIL 7:217\u2013240. doi:10.5194/soil-7-217-2021",
+      "aggregation_method": "Publisher 1000 m aggregate; nearest-neighbour reprojection to a 0.01-degree display grid.",
+      "limitations": "Regional model estimate for mapped land soil; not a current farm observation.",
+      "grid_resolution_degrees": 0.01,
+      "bounds": [
+        60.5,
+        23.5,
+        77.5,
+        37.5
+      ],
+      "valid_cells": 2190741
+    },
+    {
+      "property": "sand",
+      "path": "soilgrids_sand_pakistan.npz",
+      "format": "npz",
+      "dataset_version": "SoilGrids2.0",
+      "product_variant": "1000 m aggregate",
+      "depth_cm": [
+        5,
+        15
+      ],
+      "statistic": "mean",
+      "resolution_m": 1000,
+      "source_resolution_m": 1000,
+      "raw_divisor": 10,
+      "source": "ISRIC SoilGrids background soil map",
+      "source_url": "https://files.isric.org/soilgrids/latest/data_aggregated/1000m/sand/sand_5-15cm_mean_1000.tif",
+      "retrieved_at": "2026-09-12T05:20:03.511459+00:00",
+      "sha256": "4079a3ed0dd954d75e496d6a7b56cf8c73ccbed9875ca8eb3a76a80646ac6729",
+      "source_sha256": "c8fd832a050776dc9a545251c92b39fcd54391d155b74d7df02a4fe557efd013",
+      "source_code_version": "v2.0.0",
+      "license": "CC BY 4.0",
+      "citation": "Poggio et al. (2021), SoilGrids 2.0, SOIL 7:217\u2013240. doi:10.5194/soil-7-217-2021",
+      "aggregation_method": "Publisher 1000 m aggregate; nearest-neighbour reprojection to a 0.01-degree display grid.",
+      "limitations": "Regional model estimate for mapped land soil; not a current farm observation.",
+      "grid_resolution_degrees": 0.01,
+      "bounds": [
+        60.5,
+        23.5,
+        77.5,
+        37.5
+      ],
+      "valid_cells": 2190741
+    },
+    {
+      "property": "silt",
+      "path": "soilgrids_silt_pakistan.npz",
+      "format": "npz",
+      "dataset_version": "SoilGrids2.0",
+      "product_variant": "1000 m aggregate",
+      "depth_cm": [
+        5,
+        15
+      ],
+      "statistic": "mean",
+      "resolution_m": 1000,
+      "source_resolution_m": 1000,
+      "raw_divisor": 10,
+      "source": "ISRIC SoilGrids background soil map",
+      "source_url": "https://files.isric.org/soilgrids/latest/data_aggregated/1000m/silt/silt_5-15cm_mean_1000.tif",
+      "retrieved_at": "2026-09-12T05:19:45.963556+00:00",
+      "sha256": "b7fbed4fac1162617661ff305417308ae82f006a8f4bc9c5e412c93ea403e6c6",
+      "source_sha256": "13b685ff61986da5c7d8d255fee975318947f9fc17b693a76fc136bbec0f1a46",
+      "source_code_version": "v2.0.0",
+      "license": "CC BY 4.0",
+      "citation": "Poggio et al. (2021), SoilGrids 2.0, SOIL 7:217\u2013240. doi:10.5194/soil-7-217-2021",
+      "aggregation_method": "Publisher 1000 m aggregate; nearest-neighbour reprojection to a 0.01-degree display grid.",
+      "limitations": "Regional model estimate for mapped land soil; not a current farm observation.",
+      "grid_resolution_degrees": 0.01,
+      "bounds": [
+        60.5,
+        23.5,
+        77.5,
+        37.5
+      ],
+      "valid_cells": 2190741
+    },
+    {
+      "property": "clay",
+      "path": "soilgrids_clay_pakistan.npz",
+      "format": "npz",
+      "dataset_version": "SoilGrids2.0",
+      "product_variant": "1000 m aggregate",
+      "depth_cm": [
+        5,
+        15
+      ],
+      "statistic": "mean",
+      "resolution_m": 1000,
+      "source_resolution_m": 1000,
+      "raw_divisor": 10,
+      "source": "ISRIC SoilGrids background soil map",
+      "source_url": "https://files.isric.org/soilgrids/latest/data_aggregated/1000m/clay/clay_5-15cm_mean_1000.tif",
+      "retrieved_at": "2026-09-12T05:19:41.427581+00:00",
+      "sha256": "7484836446047725bb75ead9508dd1b365d9e79aff939cc0c4c12b92d008143b",
+      "source_sha256": "4164a3176651927fd503e313a22da2d8862a5817bdcade8096a475d0540e5f17",
+      "source_code_version": "v2.0.0",
+      "license": "CC BY 4.0",
+      "citation": "Poggio et al. (2021), SoilGrids 2.0, SOIL 7:217\u2013240. doi:10.5194/soil-7-217-2021",
+      "aggregation_method": "Publisher 1000 m aggregate; nearest-neighbour reprojection to a 0.01-degree display grid.",
+      "limitations": "Regional model estimate for mapped land soil; not a current farm observation.",
+      "grid_resolution_degrees": 0.01,
+      "bounds": [
+        60.5,
+        23.5,
+        77.5,
+        37.5
+      ],
+      "valid_cells": 2190741
+    },
+    {
+      "property": "ec",
+      "path": "hwsd2_ec_pakistan.npz",
+      "format": "npz",
+      "dataset_version": "HWSD2.0",
+      "depth_cm": [
+        0,
+        20
+      ],
+      "statistic": "dominant_soil_unit",
+      "resolution_m": 1000,
+      "source_resolution_m": 1000,
+      "raw_divisor": 1,
+      "source": "FAO/IIASA HWSD2 historical soil map",
+      "source_url": "https://www.fao.org/land-water/resources/tools/databases/hwsd/en",
+      "retrieved_at": "2026-09-12T05:16:48.000517+00:00",
+      "sha256": "1a6bb4b91f0888e2aaff5a418afbf876af35e28ad548b4824370403e53465d1b",
+      "database_sha256": "e15379e80c075f4a30e1ee3da48675c9094c93d5880509abc57d8d4d87e61b94",
+      "raster_sha256": "881a37077c6d1ee8c4d607853e7d92c45baa72b052a2126fee511aa102daa06b",
+      "citation": "FAO and IIASA (2023), Harmonized World Soil Database version 2.0. doi:10.4060/cc3823en",
+      "license": "FAO/IIASA HWSD2 terms; attribution required; source conversion supplied by ISRIC.",
+      "measurement_method": "Harmonized EC in dS/m; extraction method is not specified per mapping unit.",
+      "aggregation_method": "Declared dominant soil component (SEQUENCE=1), with largest share and complete component shares.",
+      "observation_period": "Historical source observations; cell-specific sampling dates unavailable.",
+      "limitations": "Coarse mapped surface-soil reference; not a current farm, irrigation-water or nutrient-solution EC.",
+      "bounds": [
+        60.5,
+        23.5,
+        77.5,
+        37.5
+      ]
+    }
+  ]
+}

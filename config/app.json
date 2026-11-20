@@ -1,0 +1,7 @@
+{
+  "app_name": "Lettuce Care Pakistan",
+  "version": "1.3.2",
+  "model_mode": "single",
+  "device": "auto",
+  "weather_timeout_seconds": 5.0
+}

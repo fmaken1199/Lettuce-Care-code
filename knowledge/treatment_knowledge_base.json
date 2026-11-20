@@ -1,0 +1,1388 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "version": "2026-10-07.2",
+    "scope": "international_reference",
+    "review_date": "2026-10-07",
+    "review_status": "documentary_review_completed_expert_review_pending",
+    "expert_review_pending": true,
+    "country_note": "Reference evidence does not establish approval or field effectiveness at the user location.",
+    "field_validation_status": "not_performed",
+    "registration_validation_status": "not_assessed_for_user_location",
+    "selection_basis": "Curated referenced alternatives, not comparative efficacy rankings or a tank-mix instruction. Up to two eligible references per result.",
+    "scope_note": "International reference evidence with source jurisdiction retained. No default country registration is inferred.",
+    "migration": {
+      "legacy_treatment_actions": 29,
+      "legacy_source_records": 19,
+      "legacy_unique_urls": 15,
+      "duplicate_source_ids_merged": {
+        "UC_DOWNY_MED": "UC_DOWNY",
+        "UC_POWDERY_MED": "UC_POWDERY",
+        "UC_ANTHRACNOSE_MED": "UC_ANTHRACNOSE",
+        "UC_BOTTOM_ROT_MED": "UC_BOTTOM_ROT"
+      }
+    },
+    "rule_count_note": "R01-R13 preserve application and mixed selection policies; R14-R17 add sourced care contexts. Rules are not independently validated efficacy claims."
+  },
+  "policy": {
+    "protected_humidity_attention_percent": 90,
+    "priority_meaning": "Higher number means earlier display, not efficacy, severity or probability.",
+    "maximum_actions": 7,
+    "maximum_medication_options": 2
+  },
+  "diseases": {
+    "Anthracnose": {
+      "display_name": "Anthracnose",
+      "broad_label": false,
+      "summary": "Reduce water splash and check lower leaves for new spots.",
+      "action_ids": [
+        "dry_foliage",
+        "anthracnose_scout",
+        "anthracnose_rotation",
+        "clean_tools"
+      ],
+      "medication": {
+        "status": "options",
+        "summary": "For suspected anthracnose.",
+        "option_ids": [
+          "anthracnose_azoxystrobin"
+        ],
+        "source_ids": [
+          "PNW_ANTHRACNOSE",
+          "UC_ANTHRACNOSE"
+        ]
+      }
+    },
+    "Bacterial": {
+      "display_name": "Bacterial disease pattern",
+      "broad_label": true,
+      "summary": "The model identifies a broad bacterial pattern. Focus on hygiene and limiting splash.",
+      "action_ids": [
+        "dry_foliage",
+        "clean_tools",
+        "bacterial_residues",
+        "healthy_seed"
+      ],
+      "medication": {
+        "status": "not_selected",
+        "summary": "The bacterial label is too broad to select a targeted medication.",
+        "option_ids": [],
+        "source_ids": []
+      }
+    },
+    "Bottom_Rot": {
+      "display_name": "Bottom rot",
+      "broad_label": false,
+      "summary": "Inspect the plant base and manage residue and drainage around affected plants.",
+      "action_ids": [
+        "bottom_inspect",
+        "bottom_residue",
+        "clean_tools"
+      ],
+      "medication": {
+        "status": "options",
+        "summary": "These options may help prevent bottom rot. They will not restore heads that are already rotting.",
+        "option_ids": [
+          "bottom_azoxystrobin",
+          "bottom_bacillus_d747"
+        ],
+        "source_ids": [
+          "PNW_BOTTOM_ROT",
+          "NE_LETTUCE_DISEASE"
+        ]
+      }
+    },
+    "Downy_Mildew": {
+      "display_name": "Downy mildew",
+      "broad_label": false,
+      "summary": "Keep foliage dry where possible and inspect the undersides of leaves.",
+      "action_ids": [
+        "dry_foliage",
+        "downy_inspect",
+        "downy_next_crop",
+        "clean_tools"
+      ],
+      "medication": {
+        "status": "options",
+        "summary": "For suspected downy mildew.",
+        "option_ids": [
+          "downy_fosetyl_al",
+          "downy_mandipropamid"
+        ],
+        "source_ids": [
+          "PNW_DOWNY",
+          "UC_DOWNY"
+        ]
+      }
+    },
+    "Healthy": {
+      "display_name": "Healthy appearance",
+      "broad_label": false,
+      "summary": "Continue routine crop care and watch for changes. No disease-specific action is selected.",
+      "action_ids": [
+        "routine_monitor",
+        "steady_moisture"
+      ],
+      "medication": {
+        "status": "not_needed",
+        "summary": "No disease medication suggested for a healthy result.",
+        "option_ids": [],
+        "source_ids": []
+      }
+    },
+    "Lettuce_Mosaic_Virus": {
+      "display_name": "Lettuce mosaic virus",
+      "broad_label": false,
+      "summary": "Focus on limiting spread and protecting subsequent plantings.",
+      "action_ids": [
+        "mosaic_vectors",
+        "mosaic_reservoirs",
+        "mosaic_seed",
+        "clean_tools"
+      ],
+      "medication": {
+        "status": "no_curative",
+        "summary": "No chemical cure for infected plants. Focus on limiting spread and using healthy planting material.",
+        "option_ids": [],
+        "source_ids": [
+          "UC_VIRUSES"
+        ]
+      }
+    },
+    "Powdery_Mildew": {
+      "display_name": "Powdery mildew",
+      "broad_label": false,
+      "summary": "Inspect both leaf surfaces and track whether powdery growth spreads.",
+      "action_ids": [
+        "powdery_inspect",
+        "remove_debris",
+        "clean_tools"
+      ],
+      "medication": {
+        "status": "options",
+        "summary": "For suspected powdery mildew.",
+        "option_ids": [
+          "powdery_quinoxyfen",
+          "powdery_azoxystrobin"
+        ],
+        "source_ids": [
+          "NE_LETTUCE_DISEASE",
+          "UC_POWDERY",
+          "PNW_POWDERY"
+        ]
+      }
+    },
+    "Septoria_Blight": {
+      "display_name": "Septoria blight",
+      "broad_label": false,
+      "summary": "Reduce splash, clear old crop debris and monitor neighbouring lettuce.",
+      "action_ids": [
+        "dry_foliage",
+        "septoria_residues",
+        "healthy_seed",
+        "clean_tools"
+      ],
+      "medication": {
+        "status": "options",
+        "summary": "For suspected Septoria leaf spot.",
+        "option_ids": [
+          "septoria_mancozeb"
+        ],
+        "source_ids": [
+          "KENDON_MANCOZEB_LABEL"
+        ]
+      }
+    },
+    "Viral": {
+      "display_name": "Viral disease pattern",
+      "broad_label": true,
+      "summary": "This broad label does not identify a particular virus. Prioritise monitoring and prevention of spread.",
+      "action_ids": [
+        "viral_vectors",
+        "viral_reservoirs",
+        "healthy_seed",
+        "clean_tools"
+      ],
+      "medication": {
+        "status": "no_curative",
+        "summary": "No chemical cure for infected plants. This broad viral label does not identify an insect vector.",
+        "option_ids": [],
+        "source_ids": [
+          "UC_VIRUSES"
+        ]
+      }
+    },
+    "Wilt_and_Leaf_Blight": {
+      "display_name": "Wilt and leaf blight pattern",
+      "broad_label": true,
+      "summary": "Check leaves, the plant base and water delivery together; this combined label does not establish one cause.",
+      "action_ids": [
+        "wilt_inspect",
+        "clean_tools",
+        "remove_debris"
+      ],
+      "medication": {
+        "status": "not_selected",
+        "summary": "The combined wilt and leaf-blight label is too broad to select a targeted medication.",
+        "option_ids": [],
+        "source_ids": []
+      }
+    }
+  },
+  "uncertain_action_ids": [
+    "retake_image",
+    "routine_monitor"
+  ],
+  "treatments": {
+    "retake_image": {
+      "treatment_type": "care",
+      "title": "Take a clearer leaf photograph",
+      "detail": "Photograph one affected leaf in daylight, with the whole leaf visible and the symptoms in focus.",
+      "priority": 100,
+      "category": "follow_up",
+      "reason": "The image result does not yet support disease-specific advice.",
+      "source_ids": [],
+      "evidence_type": "application input policy"
+    },
+    "routine_monitor": {
+      "treatment_type": "care",
+      "title": "Check nearby plants",
+      "detail": "Look at leaf surfaces and the plant base. Record any new spots, wilting or insects and compare photographs over time.",
+      "priority": 45,
+      "category": "monitoring",
+      "reason": "Regular observations help identify a developing problem.",
+      "source_ids": [
+        "NC_LETTUCE",
+        "UF_HYDROPONIC"
+      ]
+    },
+    "steady_moisture": {
+      "treatment_type": "care",
+      "title": "Keep root-zone moisture steady",
+      "detail": "Check the bed or growing medium before watering; avoid both drying out and prolonged saturation.",
+      "priority": 40,
+      "category": "crop_care",
+      "reason": "Lettuce needs consistent moisture for growth.",
+      "source_ids": [
+        "NC_LETTUCE"
+      ],
+      "root_systems": [
+        "soil",
+        "substrate"
+      ]
+    },
+    "dry_foliage": {
+      "treatment_type": "care",
+      "title": "Limit water splash onto leaves",
+      "detail": "Direct irrigation to the root zone where possible. If overhead watering is needed, use morning conditions that let leaves dry promptly.",
+      "priority": 75,
+      "category": "cultural",
+      "reason": "Splash and persistent leaf wetness can favour several lettuce leaf diseases.",
+      "source_ids": [
+        "UC_ANTHRACNOSE",
+        "UC_BACTERIAL",
+        "UC_DOWNY",
+        "UMD_LETTUCE"
+      ],
+      "tags": [
+        "leaf_wetness"
+      ]
+    },
+    "clean_tools": {
+      "treatment_type": "care",
+      "title": "Clean crop-handling tools",
+      "detail": "Remove plant residue from tools and clean them between affected and unaffected crop areas.",
+      "priority": 55,
+      "category": "hygiene",
+      "reason": "Contaminated handling equipment can move plant material between plants.",
+      "source_ids": [
+        "EO_LETTUCE"
+      ]
+    },
+    "remove_debris": {
+      "treatment_type": "care",
+      "title": "Clear old crop debris",
+      "detail": "Collect old leaves and crop waste around the growing area and keep them away from the current crop.",
+      "priority": 50,
+      "category": "hygiene",
+      "reason": "Old plant material can carry pathogens into another crop.",
+      "source_ids": [
+        "EO_LETTUCE"
+      ]
+    },
+    "healthy_seed": {
+      "treatment_type": "care",
+      "title": "Start the next planting with healthy seed",
+      "detail": "Choose seed with a documented health-testing history and start with symptom-free seedlings.",
+      "priority": 25,
+      "category": "prevention",
+      "reason": "Good planting material reduces one route by which crop problems are introduced.",
+      "source_ids": [
+        "EO_LETTUCE",
+        "NC_LETTUCE"
+      ]
+    },
+    "anthracnose_scout": {
+      "treatment_type": "care",
+      "title": "Inspect lower leaves and midribs",
+      "detail": "Look for new spots on lower leaves and along the underside of the midrib; record the affected area of the bed.",
+      "priority": 65,
+      "category": "monitoring",
+      "reason": "These are useful places to track the anthracnose pattern.",
+      "source_ids": [
+        "UC_ANTHRACNOSE"
+      ]
+    },
+    "anthracnose_rotation": {
+      "treatment_type": "care",
+      "title": "Plan a break from lettuce in affected soil",
+      "detail": "For a future crop, choose a non-lettuce rotation or a different bed with no recorded anthracnose history.",
+      "priority": 25,
+      "category": "prevention",
+      "reason": "The pathogen can persist in soil; rotation may reduce carryover.",
+      "source_ids": [
+        "UC_ANTHRACNOSE"
+      ],
+      "root_systems": [
+        "soil"
+      ]
+    },
+    "bacterial_residues": {
+      "treatment_type": "care",
+      "title": "Avoid carrying diseased residue into the next crop",
+      "detail": "Clear affected crop remains before replanting and avoid consecutive lettuce crops on uncleared infected soil.",
+      "priority": 35,
+      "category": "prevention",
+      "reason": "This is a shared residue-management practice for bacterial leaf problems, not identification of a bacterial species.",
+      "source_ids": [
+        "UC_BACTERIAL"
+      ],
+      "root_systems": [
+        "soil"
+      ]
+    },
+    "bottom_inspect": {
+      "treatment_type": "care",
+      "title": "Inspect the base of the lettuce plant",
+      "detail": "Look beneath outer leaves and around the crown for sunken, brown or decaying tissue. Photograph the base separately.",
+      "priority": 80,
+      "category": "monitoring",
+      "reason": "A leaf-only image may miss the main area affected by bottom rot.",
+      "source_ids": [
+        "UC_BOTTOM_ROT"
+      ]
+    },
+    "bottom_residue": {
+      "treatment_type": "care",
+      "title": "Prepare a clean bed for the next crop",
+      "detail": "Avoid replanting into a bed with undecomposed diseased crop residues or a known recurring bottom-rot problem.",
+      "priority": 35,
+      "category": "prevention",
+      "reason": "Residues and field disease history matter for soil-associated bottom rot.",
+      "source_ids": [
+        "UC_BOTTOM_ROT"
+      ],
+      "root_systems": [
+        "soil"
+      ]
+    },
+    "downy_inspect": {
+      "treatment_type": "care",
+      "title": "Inspect the underside of older leaves",
+      "detail": "Check beneath pale or yellow patches for light-coloured growth and record newly affected plants.",
+      "priority": 65,
+      "category": "monitoring",
+      "reason": "Downy mildew signs can be more visible on the lower leaf surface.",
+      "source_ids": [
+        "UC_DOWNY"
+      ]
+    },
+    "downy_next_crop": {
+      "treatment_type": "care",
+      "title": "Consider disease resistance for the next planting",
+      "detail": "Record the variety now grown and compare available lettuce varieties with documented downy-mildew resistance for a future planting.",
+      "priority": 25,
+      "category": "prevention",
+      "reason": "Resistance can help, although it varies with the pathogen population.",
+      "source_ids": [
+        "UC_DOWNY"
+      ]
+    },
+    "mosaic_vectors": {
+      "treatment_type": "care",
+      "title": "Look for aphids on lettuce and nearby hosts",
+      "detail": "Inspect young leaves and nearby weeds for aphids and record whether colonies are increasing.",
+      "priority": 75,
+      "category": "monitoring",
+      "reason": "Aphids can move lettuce mosaic virus between host plants.",
+      "source_ids": [
+        "UC_MOSAIC"
+      ]
+    },
+    "mosaic_reservoirs": {
+      "treatment_type": "care",
+      "title": "Remove weed and leftover crop reservoirs",
+      "detail": "Manage weeds around the growing area and clear harvested lettuce remains before the next planting.",
+      "priority": 65,
+      "category": "prevention",
+      "reason": "Weeds and leftover host plants can maintain lettuce mosaic virus.",
+      "source_ids": [
+        "UC_MOSAIC"
+      ]
+    },
+    "mosaic_seed": {
+      "treatment_type": "care",
+      "title": "Use virus-tested lettuce seed next time",
+      "detail": "Keep the seed-lot record and choose lettuce seed documented as tested for lettuce mosaic virus.",
+      "priority": 30,
+      "category": "prevention",
+      "reason": "Infected seed is one route by which lettuce mosaic starts in a crop.",
+      "source_ids": [
+        "UC_MOSAIC"
+      ]
+    },
+    "powdery_inspect": {
+      "treatment_type": "care",
+      "title": "Track powdery growth on both leaf surfaces",
+      "detail": "Inspect upper and lower surfaces and compare new photographs with today's image.",
+      "priority": 75,
+      "category": "monitoring",
+      "reason": "Powdery and downy mildew have different signs; rainfall alone does not establish powdery mildew activity.",
+      "source_ids": [
+        "UC_POWDERY"
+      ]
+    },
+    "septoria_residues": {
+      "treatment_type": "care",
+      "title": "Remove old lettuce leaves and manage nearby weeds",
+      "detail": "Clear crop remains from the production area and plan a non-lettuce break for an affected soil bed.",
+      "priority": 65,
+      "category": "hygiene",
+      "reason": "Septoria can persist through crop debris and alternate hosts.",
+      "source_ids": [
+        "UMASS_SEPTORIA",
+        "CORNELL_SEPTORIA"
+      ],
+      "root_systems": [
+        "soil"
+      ]
+    },
+    "viral_vectors": {
+      "treatment_type": "care",
+      "title": "Check for insects without assuming one vector",
+      "detail": "Look for aphids, whiteflies and leafhoppers on the crop and nearby vegetation; record what is actually present.",
+      "priority": 75,
+      "category": "monitoring",
+      "reason": "Different lettuce viruses can have different insect vectors.",
+      "source_ids": [
+        "UC_VIRUSES"
+      ]
+    },
+    "viral_reservoirs": {
+      "treatment_type": "care",
+      "title": "Reduce nearby weed hosts",
+      "detail": "Keep the growing area free of weeds and record whether similar symptoms occur on neighbouring plants.",
+      "priority": 60,
+      "category": "prevention",
+      "reason": "Several lettuce viruses use other plants as reservoirs; the broad model label does not identify which virus is present.",
+      "source_ids": [
+        "UC_VIRUSES"
+      ]
+    },
+    "wilt_inspect": {
+      "treatment_type": "care",
+      "title": "Check water delivery and the plant base",
+      "detail": "Inspect the root zone, crown and irrigation outlets, and take a close photograph of any decay or blockage.",
+      "priority": 85,
+      "category": "monitoring",
+      "reason": "Wilting can accompany several problems; the combined class does not identify a single pathogen.",
+      "source_ids": [
+        "NC_LETTUCE",
+        "UF_HYDROPONIC"
+      ]
+    },
+    "check_drainage": {
+      "treatment_type": "care",
+      "title": "Check drainage before adding more water",
+      "detail": "Look for blocked drains, standing water or persistently saturated growing medium, and restore drainage where needed.",
+      "priority": 90,
+      "category": "crop_care",
+      "reason": "The farmer reports a wet root zone; prolonged saturation can impair roots.",
+      "source_ids": [
+        "NC_LETTUCE"
+      ],
+      "root_systems": [
+        "soil",
+        "substrate"
+      ]
+    },
+    "check_dry_root": {
+      "treatment_type": "care",
+      "title": "Check water delivery to the dry root zone",
+      "detail": "Check emitters or the watering line and restore normal moisture gradually where water is not reaching roots.",
+      "priority": 85,
+      "category": "crop_care",
+      "reason": "The farmer reports a dry root zone.",
+      "source_ids": [
+        "NC_LETTUCE"
+      ],
+      "root_systems": [
+        "soil",
+        "substrate"
+      ]
+    },
+    "rain_irrigation_check": {
+      "treatment_type": "care",
+      "title": "Check the root zone before the next irrigation",
+      "detail": "Rain is forecast or reported nearby. Check actual bed moisture before deciding the next watering amount.",
+      "priority": 70,
+      "category": "crop_care",
+      "reason": "Weather is a reason to check moisture, not evidence that the bed is already wet.",
+      "source_ids": [
+        "NC_LETTUCE",
+        "UMD_LETTUCE"
+      ],
+      "root_systems": [
+        "soil",
+        "substrate"
+      ],
+      "environments": [
+        "outdoor"
+      ]
+    },
+    "protected_airflow": {
+      "treatment_type": "care",
+      "title": "Check air movement and condensation",
+      "detail": "Keep air paths clear and inspect vents or circulation fans. Manage moisture while maintaining the crop's growing temperature.",
+      "priority": 70,
+      "category": "crop_care",
+      "reason": "Air movement and moisture management help reduce condensation in protected growing areas.",
+      "source_ids": [
+        "UMASS_HUMIDITY",
+        "UF_HYDROPONIC"
+      ],
+      "environments": [
+        "greenhouse",
+        "tunnel",
+        "indoor"
+      ]
+    },
+    "hydroponic_flow": {
+      "treatment_type": "care",
+      "title": "Check solution flow and root oxygenation",
+      "detail": "Check the system's water delivery, reservoir and aeration equipment. Record root colour and any interruption to flow.",
+      "priority": 65,
+      "category": "crop_care",
+      "reason": "Hydroponic crop care depends on solution delivery and oxygen availability.",
+      "source_ids": [
+        "UF_HYDROPONIC"
+      ],
+      "root_systems": [
+        "hydroponic"
+      ]
+    },
+    "hydroponic_measure": {
+      "treatment_type": "care",
+      "title": "Record solution pH, EC and temperature",
+      "detail": "Use current reservoir measurements to compare with the nutrient programme used for this system.",
+      "priority": 45,
+      "category": "monitoring",
+      "reason": "A soil map cannot describe the nutrient solution in a hydroponic reservoir.",
+      "source_ids": [
+        "UF_HYDROPONIC"
+      ],
+      "root_systems": [
+        "hydroponic"
+      ]
+    },
+    "soil_test_plan": {
+      "treatment_type": "care",
+      "title": "Use the soil record for nutrient planning",
+      "detail": "Keep the measured pH with the soil-test results when planning nutrients for the next application.",
+      "priority": 20,
+      "category": "monitoring",
+      "reason": "A pH value alone does not determine a fertilizer dose or explain a leaf lesion.",
+      "source_ids": [
+        "NC_LETTUCE"
+      ],
+      "root_systems": [
+        "soil"
+      ]
+    },
+    "downy_fosetyl_al": {
+      "treatment_type": "chemical",
+      "active_ingredient": "Fosetyl-Al",
+      "purpose": "Fungicide option for downy mildew.",
+      "application_note": "Primarily protects against new infection; does not restore damaged leaves.",
+      "evidence_scope": "Pacific Northwest lettuce guidance, March 2026; ingredient identity also in UC April 2017 guidance.",
+      "source_ids": [
+        "PNW_DOWNY",
+        "UC_DOWNY"
+      ],
+      "product_name": null,
+      "dose": null,
+      "phi": null,
+      "root_systems": [
+        "soil"
+      ],
+      "environments": [
+        "outdoor"
+      ],
+      "jurisdiction": "United States",
+      "regulatory_status": "not_assessed_for_user_location",
+      "review_status": "reference_reviewed_local_authorization_not_assessed",
+      "frac_group": "P7"
+    },
+    "downy_mandipropamid": {
+      "treatment_type": "chemical",
+      "active_ingredient": "Mandipropamid",
+      "purpose": "Fungicide option for downy mildew.",
+      "application_note": "Protective disease management; product formulation determines application instructions.",
+      "evidence_scope": "Pacific Northwest lettuce guidance, March 2026; ingredient identity also in UC April 2017 guidance.",
+      "source_ids": [
+        "PNW_DOWNY",
+        "UC_DOWNY"
+      ],
+      "product_name": null,
+      "dose": null,
+      "phi": null,
+      "root_systems": [
+        "soil"
+      ],
+      "environments": [
+        "outdoor"
+      ],
+      "jurisdiction": "United States",
+      "regulatory_status": "not_assessed_for_user_location",
+      "review_status": "reference_reviewed_local_authorization_not_assessed",
+      "frac_group": "40"
+    },
+    "powdery_quinoxyfen": {
+      "treatment_type": "chemical",
+      "active_ingredient": "Quinoxyfen",
+      "purpose": "Fungicide option for powdery mildew.",
+      "application_note": "The source discusses management at first symptoms; a local product schedule is not supplied.",
+      "evidence_scope": "New England lettuce guidance retrieved October 2026; content revision date not stated.",
+      "source_ids": [
+        "NE_LETTUCE_DISEASE",
+        "UC_POWDERY"
+      ],
+      "product_name": null,
+      "dose": null,
+      "phi": null,
+      "root_systems": [
+        "soil"
+      ],
+      "environments": [
+        "outdoor"
+      ],
+      "jurisdiction": "United States",
+      "regulatory_status": "not_assessed_for_user_location",
+      "review_status": "reference_reviewed_local_authorization_not_assessed",
+      "frac_group": "13"
+    },
+    "powdery_azoxystrobin": {
+      "treatment_type": "chemical",
+      "active_ingredient": "Azoxystrobin",
+      "purpose": "Fungicide option for powdery mildew.",
+      "application_note": "Resistance-management and crop-injury restrictions depend on the product label.",
+      "evidence_scope": "Pacific Northwest lettuce guidance, March 2026; ingredient identity also in UC April 2017 guidance.",
+      "source_ids": [
+        "PNW_POWDERY",
+        "UC_POWDERY"
+      ],
+      "product_name": null,
+      "dose": null,
+      "phi": null,
+      "root_systems": [
+        "soil"
+      ],
+      "environments": [
+        "outdoor"
+      ],
+      "jurisdiction": "United States",
+      "regulatory_status": "not_assessed_for_user_location",
+      "review_status": "reference_reviewed_local_authorization_not_assessed",
+      "frac_group": "11"
+    },
+    "anthracnose_azoxystrobin": {
+      "treatment_type": "chemical",
+      "active_ingredient": "Azoxystrobin",
+      "purpose": "Fungicide option for anthracnose.",
+      "application_note": "The source links treatment timing to field history and early disease signs; no spray schedule is inferred from weather alone.",
+      "evidence_scope": "Pacific Northwest lettuce guidance, March 2026; ingredient identity also in UC April 2017 guidance.",
+      "source_ids": [
+        "PNW_ANTHRACNOSE",
+        "UC_ANTHRACNOSE"
+      ],
+      "product_name": null,
+      "dose": null,
+      "phi": null,
+      "root_systems": [
+        "soil"
+      ],
+      "environments": [
+        "outdoor"
+      ],
+      "jurisdiction": "United States",
+      "regulatory_status": "not_assessed_for_user_location",
+      "review_status": "reference_reviewed_local_authorization_not_assessed",
+      "frac_group": "11"
+    },
+    "seedling_check": {
+      "treatment_type": "care",
+      "title": "Inspect seedlings before they enter the crop",
+      "detail": "Check seedling leaves and stems for spots, decay or collapse. Keep affected seedlings separate and use healthy planting material.",
+      "priority": 78,
+      "category": "monitoring",
+      "reason": "Early inspection helps avoid moving visible disease into a planting.",
+      "source_ids": [
+        "UMASS_SEPTORIA",
+        "UC_BOTTOM_ROT"
+      ]
+    },
+    "harvest_handling": {
+      "treatment_type": "care",
+      "title": "Prepare clean tools and gentle harvest handling",
+      "detail": "Clean harvest tools, avoid bruising leaves and prepare shade and prompt cooling for harvested lettuce.",
+      "priority": 68,
+      "category": "hygiene",
+      "reason": "Harvest handling affects the spread of decay and the keeping quality of lettuce.",
+      "source_ids": [
+        "EO_LETTUCE",
+        "NC_LETTUCE"
+      ]
+    },
+    "overhead_timing": {
+      "treatment_type": "care",
+      "title": "Time overhead watering so leaves can dry",
+      "detail": "Where overhead irrigation is needed, use morning conditions that allow foliage to dry. Check coverage and avoid unnecessary wetting of leaves.",
+      "priority": 72,
+      "category": "crop_care",
+      "reason": "Long periods of wet foliage and splash can support several lettuce diseases.",
+      "source_ids": [
+        "UMD_LETTUCE",
+        "UMASS_SEPTORIA"
+      ]
+    },
+    "drip_flow_check": {
+      "treatment_type": "care",
+      "title": "Check drip outlets for even delivery",
+      "detail": "Inspect several outlets for blockage or uneven flow and check that water is reaching the root zone.",
+      "priority": 66,
+      "category": "crop_care",
+      "reason": "Clogged drip parts can leave plants with uneven water or nutrient delivery.",
+      "source_ids": [
+        "UF_HYDROPONIC",
+        "NC_LETTUCE"
+      ]
+    },
+    "bottom_azoxystrobin": {
+      "treatment_type": "chemical",
+      "active_ingredient": "Azoxystrobin",
+      "purpose": "Fungicide option for bottom rot.",
+      "application_note": "The referenced use targets soil or the plant base preventively; it is not a promise to restore a rotting head.",
+      "evidence_scope": "Pacific Northwest lettuce guidance, March 2026; New England ingredient confirmation.",
+      "source_ids": [
+        "PNW_BOTTOM_ROT",
+        "NE_LETTUCE_DISEASE"
+      ],
+      "jurisdiction": "United States",
+      "regulatory_status": "not_assessed_for_user_location",
+      "review_status": "reference_reviewed_local_authorization_not_assessed",
+      "product_name": null,
+      "dose": null,
+      "phi": null,
+      "root_systems": [
+        "soil"
+      ],
+      "environments": [
+        "outdoor"
+      ],
+      "frac_group": "11"
+    },
+    "bottom_bacillus_d747": {
+      "treatment_type": "biological",
+      "active_ingredient": "Bacillus amyloliquefaciens strain D747",
+      "purpose": "Biological option for bottom rot.",
+      "application_note": "Strain and formulation matter. This reference does not establish the performance of another Bacillus strain or a homemade culture.",
+      "evidence_scope": "New England lettuce guidance retrieved October 2026; page revision date not stated.",
+      "source_ids": [
+        "NE_LETTUCE_DISEASE"
+      ],
+      "jurisdiction": "United States",
+      "regulatory_status": "not_assessed_for_user_location",
+      "review_status": "reference_reviewed_local_authorization_not_assessed",
+      "product_name": null,
+      "dose": null,
+      "phi": null,
+      "root_systems": [
+        "soil"
+      ],
+      "environments": [
+        "outdoor"
+      ],
+      "frac_group": "BM02",
+      "farmer_note": "Use the specified D747 strain. Do not substitute other strains or homemade cultures."
+    },
+    "septoria_mancozeb": {
+      "treatment_type": "chemical",
+      "active_ingredient": "Mancozeb",
+      "purpose": "Fungicide option for Septoria leaf spot.",
+      "application_note": "A protectant reference with product-specific harvest restrictions; suitability near harvest and local authorization require the actual local label.",
+      "evidence_scope": "Australian manufacturer label APVMA 53223/139809; PDF title dated May 14, 2025.",
+      "source_ids": [
+        "KENDON_MANCOZEB_LABEL"
+      ],
+      "jurisdiction": "Australia",
+      "regulatory_status": "not_assessed_for_user_location",
+      "review_status": "reference_reviewed_local_authorization_not_assessed",
+      "product_name": null,
+      "dose": null,
+      "phi": null,
+      "root_systems": [
+        "soil"
+      ],
+      "environments": [
+        "outdoor"
+      ],
+      "frac_group": "M3"
+    }
+  },
+  "sources": {
+    "UC_ANTHRACNOSE": {
+      "id": "UC_ANTHRACNOSE",
+      "title": "Anthracnose: Lettuce Pest Management Guidelines",
+      "publisher": "University of California Statewide IPM",
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/anthracnose/",
+      "document_date": "2017-04",
+      "evidence_type": "university extension guideline",
+      "supports": "Inspect lower leaves and midribs; reduce splashing and leaf wetness; consider a non-lettuce rotation where there is a disease history. Lists azoxystrobin for lettuce anthracnose and links timing to field history, rainfall or first symptoms.",
+      "limitations": "California guidance. Rotation reduces inoculum but does not promise eradication. Product table is not transferred to Pakistan. California treatment table dated April 2017. It does not establish a current Pakistan lettuce label or a validated local weather trigger.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "historical_guideline_rechecked",
+      "legacy_accessed_at": "2026-09-11",
+      "legacy_source_ids": [
+        "UC_ANTHRACNOSE",
+        "UC_ANTHRACNOSE_MED"
+      ]
+    },
+    "UC_BACTERIAL": {
+      "id": "UC_BACTERIAL",
+      "title": "Bacterial Leaf Spot: Lettuce Pest Management Guidelines",
+      "publisher": "University of California Statewide IPM",
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/bacterial-leaf-spot/",
+      "document_date": "2017-04",
+      "evidence_type": "university extension guideline",
+      "supports": "Use healthy seed, reduce sprinkler splash, and avoid carrying infected lettuce residues into consecutive crops.",
+      "limitations": "The dataset label Bacterial is broader than the pathogen described here. Only shared hygiene and water-management practices are applied, with no pathogen reassignment.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "historical_guideline_rechecked",
+      "legacy_accessed_at": "2026-09-11"
+    },
+    "UC_BOTTOM_ROT": {
+      "id": "UC_BOTTOM_ROT",
+      "title": "Rhizoctonia Diseases: Lettuce Pest Management Guidelines",
+      "publisher": "University of California Statewide IPM",
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/rhizoctonia-diseases/",
+      "document_date": "2017-04",
+      "evidence_type": "university extension guideline",
+      "supports": "April 2017 guidance supports bed hygiene and disease-history checks. Its statement that no fungicides are effective is historical and conflicts with newer regional treatment guidance.",
+      "limitations": "Retained for cultural care and historical transparency. Medication coverage now uses the March 2026 PNW handbook and the New England guide; efficacy varies by region, pathogen and application.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "historical_guideline_rechecked",
+      "legacy_accessed_at": "2026-09-11",
+      "legacy_source_ids": [
+        "UC_BOTTOM_ROT",
+        "UC_BOTTOM_ROT_MED"
+      ]
+    },
+    "UC_DOWNY": {
+      "id": "UC_DOWNY",
+      "title": "Downy Mildew: Lettuce Pest Management Guidelines",
+      "publisher": "University of California Statewide IPM",
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/downy-mildew/",
+      "document_date": "2017-04",
+      "evidence_type": "university extension guideline",
+      "supports": "Inspect lower leaf surfaces; reducing leaf wetness can help; choose resistance when planning subsequent plantings. Names fosetyl-Al and mandipropamid for lettuce downy mildew; describes mainly protective fungicide use.",
+      "limitations": "April 2017 table. Its dimethomorph supplemental-label entry expires in December 2018 and is excluded. Current ingredient references use newer guidance; foreign rates and approval are not transferred.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "historical_guideline_rechecked",
+      "legacy_accessed_at": "2026-09-11",
+      "legacy_source_ids": [
+        "UC_DOWNY",
+        "UC_DOWNY_MED"
+      ]
+    },
+    "UC_MOSAIC": {
+      "id": "UC_MOSAIC",
+      "title": "Lettuce Mosaic: Lettuce Pest Management Guidelines",
+      "publisher": "University of California Statewide IPM",
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/lettuce-mosaic/",
+      "document_date": "2017-04",
+      "evidence_type": "university extension guideline",
+      "supports": "Virus-tested seed, weed and crop-residue management, and aphid monitoring support prevention.",
+      "limitations": "Applied to Lettuce_Mosaic_Virus only; California seed-testing ordinances and crop calendars are not presented as Pakistan requirements.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "historical_guideline_rechecked",
+      "legacy_accessed_at": "2026-09-11"
+    },
+    "UC_POWDERY": {
+      "id": "UC_POWDERY",
+      "title": "Powdery Mildew: Lettuce Pest Management Guidelines",
+      "publisher": "University of California Statewide IPM",
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/powdery-mildew/",
+      "document_date": "2017-04",
+      "evidence_type": "university extension guideline",
+      "supports": "Inspect both leaf surfaces for powdery growth; distinguish powdery from downy mildew. Powdery mildew is not treated as a rain-driven disease. Names quinoxyfen and azoxystrobin for lettuce powdery mildew, and discusses treatment at first symptoms and product-specific restrictions.",
+      "limitations": "The California chemical table is not a Pakistan lettuce product label. California treatment table dated April 2017. No foreign product, dose, PHI, resistance-group number or organic claim is transferred.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "historical_guideline_rechecked",
+      "legacy_accessed_at": "2026-09-11",
+      "legacy_source_ids": [
+        "UC_POWDERY",
+        "UC_POWDERY_MED"
+      ]
+    },
+    "CORNELL_SEPTORIA": {
+      "id": "CORNELL_SEPTORIA",
+      "title": "Septoria leaf spot on lettuce",
+      "publisher": "Cornell University, Long Island Vegetable Health",
+      "url": "https://blogs.cornell.edu/livegpath/gallery/lettuce/septoria-leaf-spot-on-lettuce/",
+      "document_date": null,
+      "evidence_type": "university plant pathology extension",
+      "supports": "Remove crop debris, manage alternate hosts, and use crop rotation to address carryover.",
+      "limitations": "Source text retrieved from the search index; direct fetch returned HTTP 502 on the access date. Seed and irrigation actions are independently supported by other listed sources. Direct retrieval also failed during the 2026-10-07 review; inherited details are not newly verified.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "direct_retrieval_failed_inherited_record",
+      "legacy_accessed_at": "2026-09-11"
+    },
+    "UC_VIRUSES": {
+      "id": "UC_VIRUSES",
+      "title": "Spinach and Lettuce Virus Diseases",
+      "publisher": "University of California Statewide IPM",
+      "url": "https://ipm.ucanr.edu/home-and-landscape/spinach-and-lettuce-virus-diseases/",
+      "document_date": null,
+      "evidence_type": "university extension guideline",
+      "supports": "Virus symptoms overlap; different viruses have different insect vectors. Healthy seed and limiting insect access support prevention; symptomatic plants have no practical virus cure.",
+      "limitations": "The inherited Viral label does not identify a virus or its specific vector. The app does not prescribe a vector-specific insecticide.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "retrieved_and_reviewed",
+      "legacy_accessed_at": "2026-09-11"
+    },
+    "NC_LETTUCE": {
+      "id": "NC_LETTUCE",
+      "title": "Lettuce Production in North Carolina",
+      "publisher": "North Carolina State University Extension",
+      "url": "https://content.ces.ncsu.edu/lettuce",
+      "document_date": "2025-12-28",
+      "evidence_type": "university extension production guideline",
+      "supports": "Regular scouting, consistent moisture without prolonged saturation, irrigation checks and fertilizer planning based on soil tests.",
+      "limitations": "Regional planting calendars, cultivar recommendations, fertilizer rates and numerical soil targets are not copied into the Pakistan system.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "retrieved_and_reviewed",
+      "legacy_accessed_at": "2026-09-11",
+      "document_date_basis": "Page explicitly says reviewed/revised December 28, 2025; originally published January 1, 2001."
+    },
+    "UMD_LETTUCE": {
+      "id": "UMD_LETTUCE",
+      "title": "Growing Lettuce in a Home Garden",
+      "publisher": "University of Maryland Extension",
+      "url": "https://www.extension.umd.edu/resource/growing-lettuce-home-garden",
+      "document_date": "2026-03-25",
+      "evidence_type": "university extension guideline",
+      "supports": "Avoid excessive watering; if overhead irrigation is used, choose morning so foliage can dry during the day.",
+      "limitations": "Timing guidance supports a scheduling suggestion; forecast rain does not establish actual root-zone moisture.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "retrieved_and_reviewed",
+      "legacy_accessed_at": "2026-09-11"
+    },
+    "EO_LETTUCE": {
+      "id": "EO_LETTUCE",
+      "title": "Disease Management in Organic Lettuce Production",
+      "publisher": "Ohio State University plant pathologists / eOrganic, hosted by Oregon State University",
+      "url": "https://eorganic.org/node/5000",
+      "document_date": "2010-11-02",
+      "evidence_type": "university-authored extension guideline",
+      "supports": "Clean tools, remove old plant debris, manage weeds, use healthy seed and avoid poorly drained conditions.",
+      "limitations": "General practices only. Organic certification, amendments, seed-treatment recipes and chemical/biological product claims are not transferred to Pakistan.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "retrieved_and_reviewed",
+      "legacy_accessed_at": "2026-09-11"
+    },
+    "UMASS_HUMIDITY": {
+      "id": "UMASS_HUMIDITY",
+      "title": "Reducing Humidity in the Greenhouse",
+      "publisher": "University of Massachusetts Amherst Extension",
+      "url": "https://www.umass.edu/agriculture-food-environment/greenhouse-floriculture/fact-sheets/reducing-humidity-in-greenhouse",
+      "document_date": null,
+      "evidence_type": "university extension engineering guideline",
+      "supports": "Air movement and moisture management help limit condensation; appropriate ventilation can exchange humid air while maintaining crop temperature.",
+      "limitations": "General greenhouse guidance, not a lettuce infection model. Direct retrieval returned HTTP 403 during the 2026-10-07 review; inherited details and date are not newly verified. The app's 90% RH attention trigger is a manual attention policy, not a universal biological threshold. A separately retrieved UF/IFAS source supports the general airflow practice.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "direct_retrieval_failed_inherited_record",
+      "legacy_accessed_at": "2026-09-11",
+      "legacy_document_date": "2026-06-16",
+      "document_date_basis": "No date newly verified; the inherited record carried 2026-06-16."
+    },
+    "UF_HYDROPONIC": {
+      "id": "UF_HYDROPONIC",
+      "title": "Growing Lettuce in Small Hydroponic Systems",
+      "publisher": "University of Florida IFAS Extension",
+      "url": "https://ask.ifas.ufl.edu/publication/HS1422",
+      "document_date": null,
+      "evidence_type": "university extension guideline",
+      "supports": "Monitor solution pH, EC, temperature and oxygenation; check irrigation flow and scout hydroponic crops. Keep procedure records.",
+      "limitations": "Small-system guidance. The app does not prescribe a universal pump cycle, solution recipe or dosing rate; system-specific targets differ.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "review_status": "retrieved_and_reviewed",
+      "legacy_accessed_at": "2026-09-11"
+    },
+    "PAK_DPP": {
+      "id": "PAK_DPP",
+      "title": "List of Registered Pesticides in Pakistan",
+      "publisher": "Department of Plant Protection, Pakistan",
+      "url": "https://plantprotection.gov.pk/services/pesticide-registration/list-of-registered-pesticides-in-pakistan/",
+      "document_date": null,
+      "evidence_type": "government registration index",
+      "supports": "Official index of Pakistan pesticide registration resources.",
+      "limitations": "Index availability does not demonstrate a current product label for lettuce, a target disease or a particular protected/hydroponic use. No product-specific Pakistan lettuce entry was established in this release. Search-index access succeeded; direct fetch did not. Direct retrieval also failed during the 2026-10-07 review; inherited details are not newly verified.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "Pakistan",
+      "review_status": "direct_retrieval_failed_inherited_record",
+      "legacy_accessed_at": "2026-09-11",
+      "usage": "background_only"
+    },
+    "PAK_REVUS_SCOPE": {
+      "id": "PAK_REVUS_SCOPE",
+      "title": "Revus Start: Pakistan product uses",
+      "publisher": "Syngenta Pakistan",
+      "url": "https://www.syngenta.com.pk/product/crop-protection/revus-start-01",
+      "document_date": null,
+      "evidence_type": "manufacturer product page",
+      "supports": "Page lists mandipropamid plus cymoxanil with potato and melon uses. Lettuce was not listed at review.",
+      "limitations": "Retrieved page lists potato/melon uses, not lettuce. This does not establish that no Pakistan lettuce product exists, and it does not authorize transferring overseas lettuce use.",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "Pakistan",
+      "review_status": "retrieved_and_reviewed",
+      "legacy_accessed_at": "2026-09-12",
+      "usage": "background_only"
+    },
+    "PNW_BOTTOM_ROT": {
+      "id": "PNW_BOTTOM_ROT",
+      "title": "Lettuce (Lactuca sativa) - Bottom Rot",
+      "publisher": "Oregon State University, Washington State University and University of Idaho Extension",
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-bottom-rot",
+      "document_date": "2026-03",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States (Pacific Northwest)",
+      "evidence_type": "university extension guideline",
+      "supports": "Lettuce bottom-rot page lists chemical and biological references; drainage and rotation remain part of management.",
+      "limitations": "Regional extension reference, not proof of registration at the user location or universal efficacy. No application rates or product authorizations are transferred.",
+      "review_status": "retrieved_and_reviewed",
+      "document_date_basis": "Page explicitly states latest revision March 2026."
+    },
+    "PNW_DOWNY": {
+      "id": "PNW_DOWNY",
+      "title": "Lettuce (Lactuca sativa) - Downy Mildew",
+      "publisher": "Oregon State University, Washington State University and University of Idaho Extension",
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-downy-mildew",
+      "document_date": "2026-03",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States (Pacific Northwest)",
+      "evidence_type": "university extension guideline",
+      "supports": "Lettuce downy-mildew page lists Aliette and Revus references and distinguishes protective management and resistance groups.",
+      "limitations": "Regional extension reference, not proof of registration at the user location or universal efficacy. No application rates or product authorizations are transferred.",
+      "review_status": "retrieved_and_reviewed",
+      "document_date_basis": "Page explicitly states latest revision March 2026."
+    },
+    "PNW_POWDERY": {
+      "id": "PNW_POWDERY",
+      "title": "Lettuce (Lactuca sativa) - Powdery Mildew",
+      "publisher": "Oregon State University, Washington State University and University of Idaho Extension",
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-powdery-mildew",
+      "document_date": "2026-03",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States (Pacific Northwest)",
+      "evidence_type": "university extension guideline",
+      "supports": "Lettuce powdery-mildew page lists Quadris references; protective treatment and resistance management are emphasized.",
+      "limitations": "Regional extension reference, not proof of registration at the user location or universal efficacy. No application rates or product authorizations are transferred.",
+      "review_status": "retrieved_and_reviewed",
+      "document_date_basis": "Page explicitly states latest revision March 2026."
+    },
+    "PNW_ANTHRACNOSE": {
+      "id": "PNW_ANTHRACNOSE",
+      "title": "Lettuce (Lactuca sativa) - Anthracnose",
+      "publisher": "Oregon State University, Washington State University and University of Idaho Extension",
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-anthracnose",
+      "document_date": "2026-03",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States (Pacific Northwest)",
+      "evidence_type": "university extension guideline",
+      "supports": "Lettuce anthracnose page lists Quadris references alongside sanitation, rotation and weed management.",
+      "limitations": "Regional extension reference, not proof of registration at the user location or universal efficacy. No application rates or product authorizations are transferred.",
+      "review_status": "retrieved_and_reviewed",
+      "document_date_basis": "Page explicitly states latest revision March 2026."
+    },
+    "NE_LETTUCE_DISEASE": {
+      "id": "NE_LETTUCE_DISEASE",
+      "title": "Lettuce, Endive and Escarole: Disease Control",
+      "publisher": "New England Vegetable Management Guide / UMass Amherst",
+      "url": "https://nevegetable.org/crops/lettuce-endive-and-escarole/disease-control",
+      "document_date": null,
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States (New England)",
+      "evidence_type": "university extension guideline",
+      "supports": "Lettuce sections identify azoxystrobin and Bacillus amyloliquefaciens D747 for bottom rot, and quinoxyfen for powdery mildew.",
+      "limitations": "No content revision date was visible; 2026 copyright is not a publication date. Local registration and efficacy were not established.",
+      "review_status": "retrieved_and_reviewed"
+    },
+    "UMASS_SEPTORIA": {
+      "id": "UMASS_SEPTORIA",
+      "title": "Lettuce, Septoria Blight",
+      "publisher": "University of Massachusetts Amherst Extension",
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/lettuce-septoria-blight",
+      "document_date": "2014-01-14",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "United States",
+      "evidence_type": "university extension guideline",
+      "supports": "Supports healthy seed, transplant inspection, reducing splash and leaf wetness, residue management and weed control.",
+      "limitations": "Historical cultural-care guidance. It refers readers elsewhere for current chemical recommendations and is not used to select a fungicide.",
+      "review_status": "retrieved_and_reviewed",
+      "document_date_basis": "Page explicitly states last updated January 14, 2014."
+    },
+    "KENDON_MANCOZEB_LABEL": {
+      "id": "KENDON_MANCOZEB_LABEL",
+      "title": "Kendon Mancozeb WG Agricultural Fungicide: manufacturer label, APVMA 53223/139809",
+      "publisher": "Kendon Plant Care Pty Ltd",
+      "url": "https://www.kendon.com.au/wp-content/uploads/2025/06/mancozeb-750wp-20kg-label-202506.pdf",
+      "document_date": "2025-05-14",
+      "reviewed_at": "2026-10-07",
+      "jurisdiction": "Australia",
+      "evidence_type": "manufacturer-hosted product label",
+      "supports": "Label identifies mancozeb 750 g/kg; its lettuce row includes Septoria leaf spot. Used only to support a generic active-ingredient reference.",
+      "limitations": "PDF cover and lettuce row were visually checked. Date comes from PDF title, not a regulator approval date. Live registration status was not independently verified. Foreign formulation, rates and withholding interval are not adopted.",
+      "review_status": "retrieved_and_reviewed",
+      "document_date_basis": "PDF title specifies conversion file 14 May 2025; hosted in June 2025 directory. Legal approval date not established."
+    }
+  },
+  "rules": {
+    "R01": {
+      "id": "R01",
+      "name": "withhold_actions",
+      "kind": "application_policy",
+      "handler": "withhold_actions",
+      "description": "Block advice when diagnosis is missing, failed or unrecognized.",
+      "source_ids": []
+    },
+    "R02": {
+      "id": "R02",
+      "name": "select_class_actions",
+      "kind": "application_policy",
+      "handler": "select_class_actions",
+      "description": "Use scope and explicit uncertainty to select disease or general care.",
+      "source_ids": []
+    },
+    "R03": {
+      "id": "R03",
+      "name": "preserve_broad_label",
+      "kind": "application_policy",
+      "handler": "preserve_broad_label",
+      "description": "Retain broad dataset categories without inferring pathogen species.",
+      "source_ids": []
+    },
+    "R04": {
+      "id": "R04",
+      "name": "hydroponic_context",
+      "kind": "mixed",
+      "handler": "hydroponic_context",
+      "description": "Use nutrient-solution care for hydroponics and exclude soil-bed actions.",
+      "source_ids": [
+        "UF_HYDROPONIC"
+      ]
+    },
+    "R05": {
+      "id": "R05",
+      "name": "respond_to_root_observation",
+      "kind": "mixed",
+      "handler": "respond_to_root_observation",
+      "description": "Respond to reported wet or dry root-zone conditions without inferring moisture from weather.",
+      "source_ids": [
+        "NC_LETTUCE"
+      ]
+    },
+    "R06": {
+      "id": "R06",
+      "name": "prioritise_airflow_check",
+      "kind": "mixed",
+      "handler": "prioritise_airflow_check",
+      "description": "Select an airflow check for protected cultivation; increase its priority when a fresh humidity reading reaches the manual 90% RH attention trigger. This is not a validated infection threshold.",
+      "source_ids": [
+        "UMASS_HUMIDITY",
+        "UF_HYDROPONIC"
+      ]
+    },
+    "R07": {
+      "id": "R07",
+      "name": "avoid_outdoor_proxy",
+      "kind": "application_policy",
+      "handler": "avoid_outdoor_proxy",
+      "description": "Do not substitute outdoor humidity for measured inside humidity.",
+      "source_ids": []
+    },
+    "R08": {
+      "id": "R08",
+      "name": "schedule_moisture_check",
+      "kind": "mixed",
+      "handler": "schedule_moisture_check",
+      "description": "Use outdoor precipitation to prompt an actual root-zone moisture check.",
+      "source_ids": [
+        "NC_LETTUCE",
+        "UMD_LETTUCE"
+      ]
+    },
+    "R09": {
+      "id": "R09",
+      "name": "use_ph_as_background",
+      "kind": "mixed",
+      "handler": "use_ph_as_background",
+      "description": "Use a current, vetted soil pH record as nutrient-planning background without computing a dose. Stale pH does not trigger an action.",
+      "source_ids": [
+        "NC_LETTUCE"
+      ]
+    },
+    "R10": {
+      "id": "R10",
+      "name": "apply_report_feedback",
+      "kind": "application_policy",
+      "handler": "apply_report_feedback",
+      "description": "Apply one bounded reporting feedback exclusion request.",
+      "source_ids": []
+    },
+    "R11": {
+      "id": "R11",
+      "name": "omit_incompatible_action",
+      "kind": "application_policy",
+      "handler": "omit_incompatible_action",
+      "description": "Exclude actions incompatible with the root system or growing environment.",
+      "source_ids": []
+    },
+    "R12": {
+      "id": "R12",
+      "name": "rank_actions",
+      "kind": "application_policy",
+      "handler": "rank_actions",
+      "description": "Rank eligible actions using manual attention scores; scores are not efficacy.",
+      "source_ids": []
+    },
+    "R13": {
+      "id": "R13",
+      "name": "select_medication",
+      "kind": "mixed",
+      "handler": "select_medication",
+      "description": "Select sourced international treatment references only within diagnosis and setup eligibility.",
+      "source_ids": [
+        "PNW_DOWNY",
+        "PNW_POWDERY",
+        "PNW_ANTHRACNOSE",
+        "PNW_BOTTOM_ROT",
+        "NE_LETTUCE_DISEASE",
+        "KENDON_MANCOZEB_LABEL",
+        "UC_VIRUSES"
+      ]
+    },
+    "R14": {
+      "id": "R14",
+      "name": "seedling_check",
+      "kind": "mixed",
+      "handler": "context_action",
+      "description": "Select seedling check when the farmer supplies growth_stage=seedling. Action evidence supports the practice; the display priority is a manual application choice.",
+      "source_ids": [
+        "UMASS_SEPTORIA",
+        "UC_BOTTOM_ROT"
+      ],
+      "when": [
+        {
+          "field": "growth_stage",
+          "equals": "seedling"
+        }
+      ],
+      "add_action_ids": [
+        "seedling_check"
+      ]
+    },
+    "R15": {
+      "id": "R15",
+      "name": "harvest_handling",
+      "kind": "mixed",
+      "handler": "context_action",
+      "description": "Select harvest handling when the farmer supplies growth_stage=near_harvest. Action evidence supports the practice; the display priority is a manual application choice.",
+      "source_ids": [
+        "EO_LETTUCE",
+        "NC_LETTUCE"
+      ],
+      "when": [
+        {
+          "field": "growth_stage",
+          "equals": "near_harvest"
+        }
+      ],
+      "add_action_ids": [
+        "harvest_handling"
+      ]
+    },
+    "R16": {
+      "id": "R16",
+      "name": "overhead_timing",
+      "kind": "mixed",
+      "handler": "context_action",
+      "description": "Select overhead timing when the farmer supplies irrigation=overhead. Action evidence supports the practice; the display priority is a manual application choice.",
+      "source_ids": [
+        "UMD_LETTUCE",
+        "UMASS_SEPTORIA"
+      ],
+      "when": [
+        {
+          "field": "irrigation",
+          "equals": "overhead"
+        }
+      ],
+      "add_action_ids": [
+        "overhead_timing"
+      ]
+    },
+    "R17": {
+      "id": "R17",
+      "name": "drip_flow_check",
+      "kind": "mixed",
+      "handler": "context_action",
+      "description": "Select drip flow check when the farmer supplies irrigation=drip. Action evidence supports the practice; the display priority is a manual application choice.",
+      "source_ids": [
+        "UF_HYDROPONIC",
+        "NC_LETTUCE"
+      ],
+      "when": [
+        {
+          "field": "irrigation",
+          "equals": "drip"
+        }
+      ],
+      "add_action_ids": [
+        "drip_flow_check"
+      ]
+    }
+  }
+}
